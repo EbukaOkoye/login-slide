@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.522)),
+    url("https://images.unsplash.com/photo-1490735891913-40897cdaafd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3Vuc2V0JTIwc2t5fGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: fit-content; */
+}
+
+/* .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.background_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background-color: black;
+    opacity: 50%;
+    color: white;
+    padding: 5rem 3rem;
+}
+
+.card1,
+.card2 {
+    transition: all 0.5s linear;
+}
+
+.btn {
+    margin-top: 3rem;
+    color: white;
+    padding: 0.3rem 2rem;
+    border: 0.1rem solid white;
+    border-radius: 0.2rem;
+    background: none;
+}
+
+.overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 15rem;
+    margin-left: -32.5rem;
+    margin-top: -23rem;
+    /* border: 2px solid red; */
+    z-index: 2;
+    width: 30rem;
+    transition: all 0.5s linear;
+}
+
+.left_section {
+    background: #ffffff;
+    padding: 3rem;
+    height: 24rem;
+    width: 100%;
+}
+
+#fullname,
+#email,
+#password {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-bottom: 2px solid grey;
+    display: block;
+}
+
+.fullname,
+.email,
+.password {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-bottom: 2px solid grey;
+    display: block;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s linear;
+}
+
+input {
+    margin-top: 2rem;
+}
+
+input[type="submit"] {
+    padding: 0.7rem 1.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    background: orangered;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    div {
+        display: none;
+    }
+
+    .error { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: #fff;
+        z-index: 1;
+    }
+}
